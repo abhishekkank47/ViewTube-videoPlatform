@@ -1,0 +1,51 @@
+nav{
+    padding: 0 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    background-color: #fff ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.left-side .menu-icon{
+    margin: 22px;
+    margin-right: 25px;
+    width: 35px;
+}
+
+.left-side .logo-img{
+    width: 170px;
+}
+
+.middle .searchbox{
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 22px;
+    margin-right: 25px;
+    padding: 8px 12px;
+}
+
+.middle .searchbox input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.middle .searchbox img{
+    width: 15px;
+}
+.right-side img{
+    margin-right: 15px;
+    width: 35px; 
+}
+
+.right-side .userIcon{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+}
+
+
+
