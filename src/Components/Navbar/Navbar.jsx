@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navbar.css";
 import menuIcon from "../../assets/menu.png";
 import Logo from "../../assets/logo.png";
@@ -7,13 +7,17 @@ import upload from "../../assets/upload.png";
 import moreIcon from "../../assets/more.png";
 import notificationIcon from "../../assets/notification.png";
 import profile from "../../assets/profile.png";
+import { sidebarShowContext } from "../../Context/SidebarContext";
 
 const Navbar = () => {
+
+  const [sidebar,setSidebar]= useContext(sidebarShowContext)
+
   return (
     <nav className="nav-container flex-div">
       
         <div className="left-side flex-div">
-          <img src={menuIcon} className="menu-icon" alt="Menu_Icon" />
+          <img src={menuIcon} onClick={()=>setSidebar(prev => prev === false ? true : false)} className="menu-icon" alt="Menu_Icon" />
           <img src={Logo} className="logo-img" alt="Logo" />
         </div>
         <div className="middle flex-div">
